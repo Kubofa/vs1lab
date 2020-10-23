@@ -26,7 +26,26 @@
 				<h2>Tagging</h2>
 
 				<!-- ############### Aufgabe1a Form1 Start -->
+				<fieldset>
+				<legend>Enter new GeoTag</legend>
 				<form id="tag-form" action="/tagging" method="post"></form>
+				<label for="input_lat">Latitude:</label>
+				<br><input id= "input_lat" type ="number" name ="latitude" placeholder = "0.12345"><br>
+				<br>
+				<label for="input_long">Longitude:</label>
+				<br><input id= "input_long" type ="number" name ="longitude" placeholder = "0.12345"><br>
+				<br>
+				<label for="input_name">Name:</label>
+				<br><input id= "input_name" type ="text" name ="name" placeholder = "Name"><br>
+				<br>
+
+				<label for="input_hashtag">Hashtag:</label>
+				<br><input id= "input_hashtag" type ="text" name ="hashtag" placeholder = "# + max. 10 letters"><br>
+				<br>
+					<button type="submit">Submit</button>
+
+
+				</fieldset>
 				<!-- ############### Aufgabe1a Form1 Ende -->
 
 			</section>
@@ -35,8 +54,22 @@
 				<h2>Discovery</h2>
 
 				<!-- ############### Aufgabe1a Form2 Start -->
+				<fieldset>
+					<legend>Filter by Searchterm</legend>
 				<form id="filter-form" action="/discovery" method="post"></form>
-				<!-- ############### Aufgabe1a Form2 Ende -->
+					<label for="input_searchterm">Searchterm:</label>
+					<input id= "input_searchterm" type ="text" name ="searchterm" placeholder = "Searchterm">
+
+					<input id= "input_lat_hidden" type = "hidden" name ="latitude" placeholder = "0.12345"><br>
+					<input id= "input_long_hidden" type ="hidden" name ="longitude" placeholder = "0.12345"><br>
+
+					<button type="submit">Apply</button>
+
+					<button type="submit">Remove</button>
+
+
+				</fieldset>
+					<!-- ############### Aufgabe1a Form2 Ende -->
 
 				<div class="taglist">
 					<ul id="results">
