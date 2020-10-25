@@ -1,79 +1,78 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-a {
-  color: #00B7FF;
-}
 * {
   box-sizing: border-box;
 }
-.header {
-  background-color: #DCDCDC;
-  color: #000000;
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
   padding: 15px;
 }
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-  border: 0.5px solid white;
-}
-.col-1{
-  width: 25%;
-}
-.col-2 {
-  width: 75%;
-}
-.col-3 {
-  width: 37.5%;
+
+#tag-form {
+  align-items: center;
+  justify-content:center
 }
 
-li{
+.tagmap {
+  text-align: right;
+}
+
+#results {
   list-style-type: none;
-  margin: 2px;
-  padding: 2px;
-  background-color: #1E90FF;
+  margin: 0;
+  padding: 0;
 }
-.col-4 {
-  width: 37.5%;
+
+#results li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: default;
 }
-.googlemap {
-  max-width: 100%;
-  height: auto;
+
+#results li:hover {
+  background-color: #0099cc;
 }
-.footer {
-  background-color: #DCDCDC;
-  color: #000000;
-  padding: 1px;
+
+header, footer {
+  background-color: #7e7e7e;
+  color: #ffffff;
+  padding: 15px;
 }
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-#input_lat{
-  width: 80px;
-  height: 25px;
+
+a {
+  color: #00B7FF;
 }
-#input_long{
-  width: 80px;
-  height: 25px;
+
+input {
+  padding: 3px;
 }
-#input_name{
-  width: 80px;
-  height: 25px;
-}
-#input_hashtag{
-  width: 80px;
-  height: 25px;
-}
-#input_searchterm{
-  width: 80px;
-  height: 25px;
+
+#submit {
+  margin-top: 7px;
 }
